@@ -8,11 +8,11 @@ tmp1 = []
 tmp2 = []
 tmp3 = []
 
-size = 500
+size = 500                          # Enter your matrix size here
 
-m1_data = np.genfromtxt('C:\\Users\\ZeroHero\\source\\repos\\PP_Lab1\\PP_Lab1\\mat1.txt', dtype=int)
-m2_data = np.genfromtxt('C:\\Users\\ZeroHero\\source\\repos\\PP_Lab1\\PP_Lab1\\mat2.txt', dtype=int)
-mult_data = np.genfromtxt('C:\\Users\\ZeroHero\\source\\repos\\PP_Lab1\\PP_Lab1\\mult.txt', dtype=int)
+m1_data = np.genfromtxt('C:\\Users\\ZeroHero\\source\\repos\\PP_Lab1\\PP_Lab1\\mat1.txt', dtype=int)        # Path to first matrix .txt file
+m2_data = np.genfromtxt('C:\\Users\\ZeroHero\\source\\repos\\PP_Lab1\\PP_Lab1\\mat2.txt', dtype=int)        # Path to second matrix .txt file
+mult_data = np.genfromtxt('C:\\Users\\ZeroHero\\source\\repos\\PP_Lab1\\PP_Lab1\\mult.txt', dtype=int)      # Path to multiplication result .txt file
 
 for i in m1_data:
     tmp1.append(i)
@@ -44,6 +44,6 @@ mul = np.array(mul)
 matrix_mul = np.array(matrix_mul)
 
 if np.array_equal(mul, matrix_mul):
-    print('True')
+    print('Multiplication was done correctly!')
 else:
-    print('Something wrong!')
+    print('Something went wrong!')
