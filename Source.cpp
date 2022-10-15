@@ -87,9 +87,9 @@ int main()
     read_matrix(matr1, row, col, "mat1.txt");
     read_matrix(matr2, row, col, "mat2.txt");
 
-    chrono::steady_clock::time_point begin = chrono::steady_clock::now();       // 
-    mult(matr1, matr2, matr3);                                                  // Multiplication time counter
-    chrono::steady_clock::time_point end = chrono::steady_clock::now();         //
+    chrono::steady_clock::time_point begin = chrono::steady_clock::now();       // Multiplication time counter start
+    mult(matr1, matr2, matr3);                                                  //
+    chrono::steady_clock::time_point end = chrono::steady_clock::now();         // Multiplication time counter end
     
     write_result("mult.txt", matr3);
     cout << "Elapsed time: " << chrono::duration_cast<std::chrono::milliseconds>(end - begin).count() << " ms " << endl;
