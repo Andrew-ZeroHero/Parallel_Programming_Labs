@@ -5,7 +5,7 @@
 int main(int argc, char *argv[])
 {
     int N = 2000;
-    int my_rank;            // Номер процесса
+    int my_rank;
     int comm_sz;            // Количество процессов
     int local_N;
     int i, j, k;
